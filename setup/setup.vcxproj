@@ -44,7 +44,7 @@
       </Message>
     </PostBuildEvent>
     <ISCC>
-      <AdditionalOptions>/Slorenzomonti="D:\proj\firma\firma.bat $p $f" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
     </ISCC>
   </ItemDefinitionGroup>
   <ItemGroup>

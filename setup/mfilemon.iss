@@ -55,11 +55,8 @@ MinVersion=0,6.1sp1
 
 LicenseFile=gpl-3.0.rtf
 
-SignTool=lorenzomonti /d "{#AppName}"
-
 [Languages]
 Name: "en"; MessagesFile: "compiler:Default.isl"
-Name: "it"; MessagesFile: "compiler:Languages\Italian.isl"
 
 [CustomMessages]
 en.errRegister=Error in port monitor registration!
@@ -67,22 +64,14 @@ en.errUnregister=Error in port monitor unregistration! Continue with removal any
 en.stoppingSpooler=Stopping spooler...
 en.startingSpooler=Starting spooler...
 
-it.errRegister=Errore nella registrazione del port monitor!
-it.errUnregister=Errore nella deregistrazione del port monitor! Continuare ugualmente con la rimozione?
-it.stoppingSpooler=Arresto dello spooler...
-it.startingSpooler=Avvio dello spooler...
 
 [Files]
 ; x64 files
 Source: "..\x64\release\mfilemon.dll"; DestDir: "{sys}"; Flags: promptifolder replacesameversion; Languages: en; Check: Is_x64
 Source: "..\x64\release\mfilemonUI.dll"; DestDir: "{sys}"; Flags: promptifolder replacesameversion; Languages: en; Check: Is_x64
-Source: "..\x64\release-ita\mfilemon.dll"; DestDir: "{sys}"; Flags: promptifolder replacesameversion; Languages: it; Check: Is_x64
-Source: "..\x64\release-ita\mfilemonUI.dll"; DestDir: "{sys}"; Flags: promptifolder replacesameversion; Languages: it; Check: Is_x64
 ; x86 files
 Source: "..\win32\release\mfilemon.dll"; DestDir: "{sys}"; Flags: promptifolder replacesameversion; Languages: en; Check: Is_x86
 Source: "..\win32\release\mfilemonUI.dll"; DestDir: "{sys}"; Flags: promptifolder replacesameversion; Languages: en; Check: Is_x86
-Source: "..\win32\release-ita\mfilemon.dll"; DestDir: "{sys}"; Flags: promptifolder replacesameversion; Languages: it; Check: Is_x86
-Source: "..\win32\release-ita\mfilemonUI.dll"; DestDir: "{sys}"; Flags: promptifolder replacesameversion; Languages: it; Check: Is_x86
 ; files common to either architectures
 Source: "..\misc\docs\ghostscript-mfilemon-howto.html"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\misc\docs\images\*"; DestDir: "{app}\images"; Flags: ignoreversion
